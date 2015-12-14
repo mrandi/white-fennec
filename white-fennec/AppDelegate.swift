@@ -103,15 +103,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return output as String
     }
     
-    @NSCopying var contentImage: NSImage?
-    
     func showNotification(title: String, msg: String) -> Void {
-        contentImage = NSImage(named: "statusIcon")
         let notification = NSUserNotification()
         notification.title = title
         notification.informativeText = msg
         notification.soundName = NSUserNotificationDefaultSoundName
-        notification.contentImage = NSImage(named: "statusIcon")
         NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
     }
 
