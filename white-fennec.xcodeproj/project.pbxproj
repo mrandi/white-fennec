@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88BB75621C1EC8E500C132B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB75611C1EC8E500C132B2 /* AppDelegate.swift */; };
+		88BB75641C1EC8E500C132B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB75631C1EC8E500C132B2 /* ViewController.swift */; };
+		88BB75661C1EC8E500C132B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BB75651C1EC8E500C132B2 /* Assets.xcassets */; };
+		88BB75691C1EC8E600C132B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BB75671C1EC8E600C132B2 /* Main.storyboard */; };
+		88BB75741C1EC8E600C132B2 /* white_fennecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB75731C1EC8E600C132B2 /* white_fennecTests.swift */; };
+		88BB757F1C1EC8E600C132B2 /* white_fennecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB757E1C1EC8E600C132B2 /* white_fennecUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88BB75701C1EC8E600C132B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BB75561C1EC8E500C132B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BB755D1C1EC8E500C132B2;
+			remoteInfo = "white-fennec";
+		};
+		88BB757B1C1EC8E600C132B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BB75561C1EC8E500C132B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BB755D1C1EC8E500C132B2;
+			remoteInfo = "white-fennec";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88BB755E1C1EC8E500C132B2 /* white-fennec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "white-fennec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BB75611C1EC8E500C132B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88BB75631C1EC8E500C132B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88BB75651C1EC8E500C132B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88BB75681C1EC8E600C132B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88BB756A1C1EC8E600C132B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BB756F1C1EC8E600C132B2 /* white-fennecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "white-fennecTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BB75731C1EC8E600C132B2 /* white_fennecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = white_fennecTests.swift; sourceTree = "<group>"; };
+		88BB75751C1EC8E600C132B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BB757A1C1EC8E600C132B2 /* white-fennecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "white-fennecUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BB757E1C1EC8E600C132B2 /* white_fennecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = white_fennecUITests.swift; sourceTree = "<group>"; };
+		88BB75801C1EC8E600C132B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88BB755B1C1EC8E500C132B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BB756C1C1EC8E600C132B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BB75771C1EC8E600C132B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88BB75551C1EC8E500C132B2 = {
+			isa = PBXGroup;
+			children = (
+				88BB75601C1EC8E500C132B2 /* white-fennec */,
+				88BB75721C1EC8E600C132B2 /* white-fennecTests */,
+				88BB757D1C1EC8E600C132B2 /* white-fennecUITests */,
+				88BB755F1C1EC8E500C132B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88BB755F1C1EC8E500C132B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88BB755E1C1EC8E500C132B2 /* white-fennec.app */,
+				88BB756F1C1EC8E600C132B2 /* white-fennecTests.xctest */,
+				88BB757A1C1EC8E600C132B2 /* white-fennecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88BB75601C1EC8E500C132B2 /* white-fennec */ = {
+			isa = PBXGroup;
+			children = (
+				88BB75611C1EC8E500C132B2 /* AppDelegate.swift */,
+				88BB75631C1EC8E500C132B2 /* ViewController.swift */,
+				88BB75651C1EC8E500C132B2 /* Assets.xcassets */,
+				88BB75671C1EC8E600C132B2 /* Main.storyboard */,
+				88BB756A1C1EC8E600C132B2 /* Info.plist */,
+			);
+			path = "white-fennec";
+			sourceTree = "<group>";
+		};
+		88BB75721C1EC8E600C132B2 /* white-fennecTests */ = {
+			isa = PBXGroup;
+			children = (
+				88BB75731C1EC8E600C132B2 /* white_fennecTests.swift */,
+				88BB75751C1EC8E600C132B2 /* Info.plist */,
+			);
+			path = "white-fennecTests";
+			sourceTree = "<group>";
+		};
+		88BB757D1C1EC8E600C132B2 /* white-fennecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88BB757E1C1EC8E600C132B2 /* white_fennecUITests.swift */,
+				88BB75801C1EC8E600C132B2 /* Info.plist */,
+			);
+			path = "white-fennecUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88BB755D1C1EC8E500C132B2 /* white-fennec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BB75831C1EC8E600C132B2 /* Build configuration list for PBXNativeTarget "white-fennec" */;
+			buildPhases = (
+				88BB755A1C1EC8E500C132B2 /* Sources */,
+				88BB755B1C1EC8E500C132B2 /* Frameworks */,
+				88BB755C1C1EC8E500C132B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "white-fennec";
+			productName = "white-fennec";
+			productReference = 88BB755E1C1EC8E500C132B2 /* white-fennec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88BB756E1C1EC8E600C132B2 /* white-fennecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BB75861C1EC8E600C132B2 /* Build configuration list for PBXNativeTarget "white-fennecTests" */;
+			buildPhases = (
+				88BB756B1C1EC8E600C132B2 /* Sources */,
+				88BB756C1C1EC8E600C132B2 /* Frameworks */,
+				88BB756D1C1EC8E600C132B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BB75711C1EC8E600C132B2 /* PBXTargetDependency */,
+			);
+			name = "white-fennecTests";
+			productName = "white-fennecTests";
+			productReference = 88BB756F1C1EC8E600C132B2 /* white-fennecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88BB75791C1EC8E600C132B2 /* white-fennecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BB75891C1EC8E600C132B2 /* Build configuration list for PBXNativeTarget "white-fennecUITests" */;
+			buildPhases = (
+				88BB75761C1EC8E600C132B2 /* Sources */,
+				88BB75771C1EC8E600C132B2 /* Frameworks */,
+				88BB75781C1EC8E600C132B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BB757C1C1EC8E600C132B2 /* PBXTargetDependency */,
+			);
+			name = "white-fennecUITests";
+			productName = "white-fennecUITests";
+			productReference = 88BB757A1C1EC8E600C132B2 /* white-fennecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88BB75561C1EC8E500C132B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Michele Randi";
+				TargetAttributes = {
+					88BB755D1C1EC8E500C132B2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = EQYWNF4UU4;
+					};
+					88BB756E1C1EC8E600C132B2 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 88BB755D1C1EC8E500C132B2;
+					};
+					88BB75791C1EC8E600C132B2 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 88BB755D1C1EC8E500C132B2;
+					};
+				};
+			};
+			buildConfigurationList = 88BB75591C1EC8E500C132B2 /* Build configuration list for PBXProject "white-fennec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88BB75551C1EC8E500C132B2;
+			productRefGroup = 88BB755F1C1EC8E500C132B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88BB755D1C1EC8E500C132B2 /* white-fennec */,
+				88BB756E1C1EC8E600C132B2 /* white-fennecTests */,
+				88BB75791C1EC8E600C132B2 /* white-fennecUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88BB755C1C1EC8E500C132B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BB75661C1EC8E500C132B2 /* Assets.xcassets in Resources */,
+				88BB75691C1EC8E600C132B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BB756D1C1EC8E600C132B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BB75781C1EC8E600C132B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88BB755A1C1EC8E500C132B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BB75641C1EC8E500C132B2 /* ViewController.swift in Sources */,
+				88BB75621C1EC8E500C132B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BB756B1C1EC8E600C132B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BB75741C1EC8E600C132B2 /* white_fennecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BB75761C1EC8E600C132B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BB757F1C1EC8E600C132B2 /* white_fennecUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88BB75711C1EC8E600C132B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BB755D1C1EC8E500C132B2 /* white-fennec */;
+			targetProxy = 88BB75701C1EC8E600C132B2 /* PBXContainerItemProxy */;
+		};
+		88BB757C1C1EC8E600C132B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BB755D1C1EC8E500C132B2 /* white-fennec */;
+			targetProxy = 88BB757B1C1EC8E600C132B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88BB75671C1EC8E600C132B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88BB75681C1EC8E600C132B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88BB75811C1EC8E600C132B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88BB75821C1EC8E600C132B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		88BB75841C1EC8E600C132B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "white-fennec/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.zalando.stups.white-fennec.white-fennec";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		88BB75851C1EC8E600C132B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "white-fennec/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.zalando.stups.white-fennec.white-fennec";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		88BB75871C1EC8E600C132B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "white-fennecTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.white-fennec.white-fennecTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/white-fennec.app/Contents/MacOS/white-fennec";
+			};
+			name = Debug;
+		};
+		88BB75881C1EC8E600C132B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "white-fennecTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.white-fennec.white-fennecTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/white-fennec.app/Contents/MacOS/white-fennec";
+			};
+			name = Release;
+		};
+		88BB758A1C1EC8E600C132B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "white-fennecUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.white-fennec.white-fennecUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "white-fennec";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		88BB758B1C1EC8E600C132B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "white-fennecUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.white-fennec.white-fennecUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "white-fennec";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88BB75591C1EC8E500C132B2 /* Build configuration list for PBXProject "white-fennec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BB75811C1EC8E600C132B2 /* Debug */,
+				88BB75821C1EC8E600C132B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BB75831C1EC8E600C132B2 /* Build configuration list for PBXNativeTarget "white-fennec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BB75841C1EC8E600C132B2 /* Debug */,
+				88BB75851C1EC8E600C132B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BB75861C1EC8E600C132B2 /* Build configuration list for PBXNativeTarget "white-fennecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BB75871C1EC8E600C132B2 /* Debug */,
+				88BB75881C1EC8E600C132B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BB75891C1EC8E600C132B2 /* Build configuration list for PBXNativeTarget "white-fennecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BB758A1C1EC8E600C132B2 /* Debug */,
+				88BB758B1C1EC8E600C132B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88BB75561C1EC8E500C132B2 /* Project object */;
+}
