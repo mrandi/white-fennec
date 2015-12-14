@@ -34,6 +34,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             maiLogin.addItem(nsmi)
         }
         
+        maiLogin.addItem(NSMenuItem.separatorItem())
+        
+        let q = NSMenuItem()
+        q.title = "Quit"
+        q.action = Selector("Quit:")
+        maiLogin.addItem(q)
+        
         statusItem.menu = maiLogin
         
         
@@ -42,6 +49,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     //func applicationWillTerminate(aNotification: NSNotification) {
     // Insert code here to tear down your application
     //}
+    
+    
+    
+    @IBAction func Quit(sender: AnyObject?) {
+        NSLog("Exit")
+        NSApplication.sharedApplication().terminate(self)
+    }
     
     
     @IBAction func loginClicked(sender: NSMenuItem) {
