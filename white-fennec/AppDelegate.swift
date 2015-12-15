@@ -16,16 +16,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
+    let mai = Mai()
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
         
         let icon = NSImage(named: "statusIcon")
         icon?.template = true
-        
         statusItem.image = icon
         
         var lines: [String]
-        lines = maiList()
+        lines = mai.list()
         
         for line in lines{
             let nsmi = NSMenuItem()
@@ -43,13 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         statusItem.menu = maiLogin
         
-        
     }
-    
-    //func applicationWillTerminate(aNotification: NSNotification) {
-    // Insert code here to tear down your application
-    //}
-    
     
     
     @IBAction func Quit(sender: AnyObject?) {
@@ -59,58 +53,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @IBAction func loginClicked(sender: NSMenuItem) {
-        maiLogin(sender.title)
+        mai.login(sender.title)
         
     }
-    
-    func maiLogin(profile: String){
-        maiCommand(["login", profile])
-        showNotification("Mai login", msg: "Login for \(profile) successfull!")
-    }
-    
-    func maiList() -> [String] {
-        let output = maiCommand(["list"])
-        
-        var result: [String] = []
-        for line in output.componentsSeparatedByString("\n"){
-            result.append(line.componentsSeparatedByString(" ").first!)
-        }
-        
-        result.removeFirst()
-        result.removeLast()
-        
-        return result
-        
-    }
-    
-    func maiCommand(parameters: [String]) -> String {
-        
-        let task = NSTask()
-        task.launchPath = "/usr/local/bin/mai"
-        task.arguments = parameters
-        task.environment = ["LC_ALL":"en_US.utf-8","LANG":"en_US.utf-8"]
-        
-        let pipe = NSPipe()
-        task.standardOutput = pipe
-        task.launch()
-        
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output: NSString = NSString(data: data, encoding: NSUTF8StringEncoding)!
-        
-        print(output)
-        task.waitUntilExit()
-        
-        return output as String
-    }
-    
-    func showNotification(title: String, msg: String) -> Void {
-        let notification = NSUserNotification()
-        notification.title = title
-        notification.informativeText = msg
-        notification.soundName = NSUserNotificationDefaultSoundName
-        NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
-    }
-
     
 }
 

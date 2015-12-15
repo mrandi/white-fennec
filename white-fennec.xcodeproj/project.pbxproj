@@ -13,6 +13,9 @@
 		88BB75691C1EC8E600C132B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BB75671C1EC8E600C132B2 /* Main.storyboard */; };
 		88BB75741C1EC8E600C132B2 /* white_fennecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB75731C1EC8E600C132B2 /* white_fennecTests.swift */; };
 		88BB757F1C1EC8E600C132B2 /* white_fennecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB757E1C1EC8E600C132B2 /* white_fennecUITests.swift */; };
+		88DA90421C201C1400440440 /* Mai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA90411C201C1400440440 /* Mai.swift */; };
+		88DA90441C201E5000440440 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA90431C201E5000440440 /* Notification.swift */; };
+		88DA90461C2028E700440440 /* MaiException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA90451C2028E700440440 /* MaiException.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		88BB757A1C1EC8E600C132B2 /* white-fennecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "white-fennecUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BB757E1C1EC8E600C132B2 /* white_fennecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = white_fennecUITests.swift; sourceTree = "<group>"; };
 		88BB75801C1EC8E600C132B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DA90411C201C1400440440 /* Mai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mai.swift; sourceTree = "<group>"; };
+		88DA90431C201E5000440440 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		88DA90451C2028E700440440 /* MaiException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaiException.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				88BB75651C1EC8E500C132B2 /* Assets.xcassets */,
 				88BB75671C1EC8E600C132B2 /* Main.storyboard */,
 				88BB756A1C1EC8E600C132B2 /* Info.plist */,
+				88DA90411C201C1400440440 /* Mai.swift */,
+				88DA90431C201E5000440440 /* Notification.swift */,
+				88DA90451C2028E700440440 /* MaiException.swift */,
 			);
 			path = "white-fennec";
 			sourceTree = "<group>";
@@ -190,7 +199,7 @@
 				TargetAttributes = {
 					88BB755D1C1EC8E500C132B2 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 4E5JCURM5E;
+						DevelopmentTeam = EQYWNF4UU4;
 					};
 					88BB756E1C1EC8E600C132B2 = {
 						CreatedOnToolsVersion = 7.2;
@@ -253,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DA90441C201E5000440440 /* Notification.swift in Sources */,
 				88BB75641C1EC8E500C132B2 /* ViewController.swift in Sources */,
+				88DA90421C201C1400440440 /* Mai.swift in Sources */,
 				88BB75621C1EC8E500C132B2 /* AppDelegate.swift in Sources */,
+				88DA90461C2028E700440440 /* MaiException.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
