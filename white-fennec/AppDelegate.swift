@@ -8,9 +8,19 @@
 
 import Cocoa
 
+// Visual Parameters
+let BarWidth: CGFloat = 7.0
+let GapBetweenBars: CGFloat = 6.0
+let LeftMargin: CGFloat = 5.5
+let RightMargin: CGFloat = 5.5
+
+// Update interval in seconds
+let UpdateInterval = 0.5
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    let statusController = StatusController()
     
     @IBOutlet weak var maiLogin: NSMenu!
     
