@@ -24,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusController = StatusController()
     
-    let speechController = SpeechController()
+    lazy var speechController = SpeechController()
     
     let autoRefresh = NSMenuItem()
     
