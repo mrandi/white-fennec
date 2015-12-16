@@ -22,6 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusController = StatusController()
     
+    let speechController = SpeechController()
+    
     @IBOutlet weak var maiLogin: NSMenu!
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
@@ -46,6 +48,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         maiLogin.addItem(NSMenuItem.separatorItem())
         
+        let listen = NSMenuItem()
+        listen.title = "Listen"
+        listen.action = Selector("Listen:")
+        maiLogin.addItem(listen)
+        
+        let stopListen = NSMenuItem()
+        stopListen.title = "Stop listen"
+        stopListen.action = Selector("StopListen:")
+        maiLogin.addItem(stopListen)
+        
+        maiLogin.addItem(NSMenuItem.separatorItem())
+        
         let q = NSMenuItem()
         q.title = "Quit"
         q.action = Selector("Quit:")
@@ -65,6 +79,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func loginClicked(sender: NSMenuItem) {
         mai.login(sender.title)
         
+    }
+    
+    @IBAction func Listen(sender: AnyObject) {
+        speechController.listen()
+    }
+    
+    @IBAction func StopListen(sender: AnyObject) {
+        speechController.stop()
     }
     
 }

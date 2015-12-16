@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881946541C2169670074F4D9 /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881946531C2169670074F4D9 /* SpeechController.swift */; };
 		88BB75621C1EC8E500C132B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB75611C1EC8E500C132B2 /* AppDelegate.swift */; };
 		88BB75641C1EC8E500C132B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB75631C1EC8E500C132B2 /* ViewController.swift */; };
 		88BB75661C1EC8E500C132B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BB75651C1EC8E500C132B2 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		881946531C2169670074F4D9 /* SpeechController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
 		88BB755E1C1EC8E500C132B2 /* white-fennec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "white-fennec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BB75611C1EC8E500C132B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88BB75631C1EC8E500C132B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				88D990DD1C205EF400EC5151 /* StatusView.swift */,
 				88D990DF1C205F3000EC5151 /* StatusController.swift */,
 				88D990E11C205F7500EC5151 /* Countdown.swift */,
+				881946531C2169670074F4D9 /* SpeechController.swift */,
 			);
 			path = "white-fennec";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				88D990DE1C205EF400EC5151 /* StatusView.swift in Sources */,
 				88BB75621C1EC8E500C132B2 /* AppDelegate.swift in Sources */,
 				88DA90461C2028E700440440 /* MaiException.swift in Sources */,
+				881946541C2169670074F4D9 /* SpeechController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
