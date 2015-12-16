@@ -39,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let icon = NSImage(named: "statusIcon")
         icon?.template = true
         statusItem.image = icon
+        statusItem.toolTip = "STUPS: mai login"
         
         var lines: [String]
         lines = mai.list()
