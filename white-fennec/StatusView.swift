@@ -16,8 +16,10 @@ class StatusView: NSView {
     /// The reference to the StatusController
     unowned let statusController: StatusController
     
-    /// The fill color of the cpu load bars
-    lazy var countdownColor = NSColor(deviceCyan: 0.00, magenta: 0.46, yellow: 0.85, black: 0.07, alpha: 1.0)
+
+    lazy var countdownColorRed = NSColor(deviceCyan: 0.00, magenta: 0.84, yellow: 0.90, black: 0.00, alpha: 1.0)
+    lazy var countdownColorYellow = NSColor(deviceCyan: 0.00, magenta: 0.13, yellow: 0.80, black: 0.00, alpha: 1.0)
+    lazy var countdownColorGreen = NSColor(deviceCyan: 0.62, magenta: 0.0, yellow: 0.50, black: 0.15, alpha: 1.0)
     
     
     /// The stroke color of the load bars
@@ -55,10 +57,17 @@ class StatusView: NSView {
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
         var frame = NSMakeRect(LeftMargin, 3.5, BarWidth, 16)
-
-        drawBarInFrame(frame, fillColor: countdownColor, percentage: statusController.getCountdownLoad())
+        
+        if (statusController.getCountdownLoad() < 0.25) {
+            drawBarInFrame(frame, fillColor: countdownColorRed, percentage: statusController.getCountdownLoad())
+        } else if (statusController.getCountdownLoad() < 0.5) {
+            drawBarInFrame(frame, fillColor: countdownColorYellow, percentage: statusController.getCountdownLoad())
+        } else {
+            drawBarInFrame(frame, fillColor: countdownColorGreen, percentage: statusController.getCountdownLoad())
+        }
+        
         frame.origin.x += (BarWidth + GapBetweenBars)
-
+        
     }
 }
 

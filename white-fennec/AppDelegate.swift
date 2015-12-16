@@ -15,7 +15,7 @@ let LeftMargin: CGFloat = 5.5
 let RightMargin: CGFloat = 5.5
 
 // Update interval in seconds
-let UpdateInterval = 0.5//60.0
+let UpdateInterval = 60.0
 
 var ProfileToRefresh = ""
 
