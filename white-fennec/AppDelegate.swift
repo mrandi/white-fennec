@@ -15,7 +15,9 @@ let LeftMargin: CGFloat = 5.5
 let RightMargin: CGFloat = 5.5
 
 // Update interval in seconds
-let UpdateInterval = 60.0
+let UpdateInterval = 0.5//60.0
+
+var ProfileToRefresh = ""
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -23,6 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusController = StatusController()
     
     let speechController = SpeechController()
+    
+    let autoRefresh = NSMenuItem()
     
     @IBOutlet weak var maiLogin: NSMenu!
     
@@ -48,6 +52,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         maiLogin.addItem(NSMenuItem.separatorItem())
         
+        
+        autoRefresh.title = "Auto refresh"
+        autoRefresh.action = Selector("AutoRefresh:")
+        maiLogin.addItem(autoRefresh)
+        
+        maiLogin.addItem(NSMenuItem.separatorItem())
+        
         let listen = NSMenuItem()
         listen.title = "Listen"
         listen.action = Selector("Listen:")
@@ -68,15 +79,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = maiLogin
         
     }
-    
+
+    @IBAction func AutoRefresh(sender: AnyObject?) {
+        
+        if (autoRefresh.state == NSOnState){
+            autoRefresh.state = NSOffState
+            statusController.setAutoRefresh(false);
+        } else {
+            autoRefresh.state = NSOnState
+            statusController.setAutoRefresh(true);
+        }
+    }
     
     @IBAction func Quit(sender: AnyObject?) {
-        NSLog("Exit")
         NSApplication.sharedApplication().terminate(self)
     }
     
     
     @IBAction func loginClicked(sender: NSMenuItem) {
+        ProfileToRefresh = sender.title
         mai.login(sender.title)
         
     }

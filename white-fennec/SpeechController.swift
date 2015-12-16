@@ -32,6 +32,7 @@ class SpeechController: NSObject, NSSpeechRecognizerDelegate {
     func speechRecognizer(sender: NSSpeechRecognizer, didRecognizeCommand command: String){
         
         print("\(command)\n")
+        ProfileToRefresh = command
         mai.login(command)
         
     }

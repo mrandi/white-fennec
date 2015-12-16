@@ -18,6 +18,7 @@ class Mai{
             try command(["login", profile])
             notification.show("Mai login", msg: "Login for \(profile) successfull!")
         }catch is NSError {
+            ProfileToRefresh = ""
             notification.show("Mai login", msg: "Error during login for \(profile)!")
         }
     }

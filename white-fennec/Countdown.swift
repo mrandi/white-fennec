@@ -13,10 +13,33 @@ class Countdown {
     
     let oneHour: Double = 60.0
     var counter: Double = 0.0
+
+    var autoRefresh: BooleanType = false
     
     func load() -> Double {
-        let result = 1 - (counter * (Double(1) / oneHour))
-        counter++
-        return result
+
+        if (ProfileToRefresh == ""){
+        
+            return 1
+        
+        } else {
+
+            let result = 1 - (counter * (Double(1) / oneHour))
+            counter++
+            return result
+        }
+        
+    }
+    
+    func setAutoRefresh(isAutoRefresh: BooleanType){
+        autoRefresh = isAutoRefresh
+    }
+    
+    func isAutoRefresh() -> BooleanType{
+        return autoRefresh
+    }
+    
+    func restartCounter(){
+        counter = 0.0
     }
 }

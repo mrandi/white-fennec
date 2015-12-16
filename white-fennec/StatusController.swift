@@ -12,6 +12,8 @@ import Cocoa
 /// The StatusController manages the status item in the menu bar
 class StatusController {
     
+    let mai = Mai()
+    
     /// The countdown stats
     let countdown = Countdown()
     
@@ -44,11 +46,27 @@ class StatusController {
     }
     
     func calculateCountdownLoad(){
+        
         countdownLoad = countdown.load()
+     
+        if (countdown.isAutoRefresh()){
+            // 2 minutes before the hour is gone, do a refresh!
+            if (countdownLoad < Double(0.03) && ProfileToRefresh != ""){
+                mai.login(ProfileToRefresh)
+                countdown.restartCounter()
+            }
+        } else if (countdownLoad == 0.0){
+            ProfileToRefresh = ""
+            countdown.restartCounter()
+        }
     }
     
     func getCountdownLoad() -> Double {
         return countdownLoad
+    }
+    
+    func setAutoRefresh(isAutoRefresh: BooleanType){
+        countdown.setAutoRefresh(isAutoRefresh)
     }
     
     /// Get the current load values and update the statusView
