@@ -17,9 +17,12 @@ class Mai{
         do{
             try command(["login", profile])
             notification.show("Mai login", msg: "Login for \(profile) successfull!")
-        }catch is NSError {
+        }catch MaiException.CommandError{
+            
             ProfileToRefresh = ""
             notification.show("Mai login", msg: "Error during login for \(profile)!")
+        } catch{
+            
         }
     }
     
@@ -29,8 +32,10 @@ class Mai{
         
         do {
             output = try command(["list"])
-        } catch is NSError {
+        } catch MaiException.CommandError {
            notification.show("Mai list", msg: "Error during ´mai list´ command execution!")
+        } catch{
+            
         }
     
         var result: [String] = []
