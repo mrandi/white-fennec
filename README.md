@@ -1,10 +1,12 @@
 # white-fennec
 
 white-fennec use [mai](https://github.com/zalando-stups/mai) to show a list of available accounts for AWS.
+
 The mai location used is `/usr/local/bin/mai`
 
-<img src=images/white-fennec.png width=407 height=127 alt="Screenshot of white-fennec"/>
-<img src=images/white-fennec-list.png width=407 height=127 alt="Screenshot of white-fennec-list"/>
+<img src=images/white-fennec.png alt="Screenshot of white-fennec"/>
+
+<img src=images/white-fennec-list.png alt="Screenshot of white-fennec-list"/>
 
 # Details
 
