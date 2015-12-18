@@ -10,9 +10,9 @@ The mai location used is `/usr/local/bin/mai`
 
 # Details
 
-* A the bar represent 1 hour, every minute will be updated and change the color
+* The bar represents the token validity (1 hour)
 * Possible to activate auto refresh
-* Listen function is available
+* Listen function is available (for voice commands)
 
 # Compatibility
 
