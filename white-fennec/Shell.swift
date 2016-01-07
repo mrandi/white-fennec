@@ -34,19 +34,14 @@ class Shell {
         /// fetch data from pipe
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         
-        let output = NSString(data: data, encoding: NSUTF8StringEncoding)! as String
-        NSLog("\(output)")
-
         /// block till ready
         command.waitUntilExit()
-
-        NSLog("finished wating")
        
         if command.terminationStatus != 0 {
             throw ShellException.ShellError
         }
         
         /// convert to string and return
-        return output
+        return NSString(data: data, encoding: NSUTF8StringEncoding)! as String
     }
 }
