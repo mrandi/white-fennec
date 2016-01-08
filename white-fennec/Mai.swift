@@ -11,17 +11,20 @@ import Foundation
 class Mai{
     
     let notification = Notification()
+    let shell = Shell()
     
     func login(profile: String){
         
-        do{
-            try command(["login", profile])
-            notification.show("Mai login", msg: "Login for \(profile) successfull!")
-        }catch MaiException.CommandError{
+        do {
+            try
+                _ = shell.run("mai login \(profile)")
+                notification.show("Mai login", msg: "Login for \(profile) successfull!")
+        } catch ShellException.ShellError {
             
             ProfileToRefresh = ""
             notification.show("Mai login", msg: "Error during login for \(profile)!")
-        } catch{
+        
+        } catch {
             
         }
     }
@@ -31,8 +34,8 @@ class Mai{
         var output: String = ""
         
         do {
-            output = try command(["list"])
-        } catch MaiException.CommandError {
+            output = try shell.run("mai list")
+        } catch ShellException.ShellError {
            notification.show("Mai list", msg: "Error during ´mai list´ command execution!")
         } catch{
             
@@ -48,30 +51,6 @@ class Mai{
         
         return result
         
-    }
-    
-    func command(parameters: [String]) throws -> String {
-        
-        let task = NSTask()
-        task.launchPath = "/usr/local/bin/mai"
-        task.arguments = parameters
-        task.environment = ["LC_ALL":"en_US.utf-8","LANG":"en_US.utf-8"]
-        
-        let pipe = NSPipe()
-        task.standardOutput = pipe
-        task.launch()
-        
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output: NSString = NSString(data: data, encoding: NSUTF8StringEncoding)!
-        
-        print(output)
-        task.waitUntilExit()
-
-        if (task.terminationStatus != 0){
-            throw MaiException.CommandError
-        }
-        
-        return output as String
     }
     
 }

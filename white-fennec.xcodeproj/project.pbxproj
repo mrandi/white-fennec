@@ -21,6 +21,8 @@
 		88DA90421C201C1400440440 /* Mai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA90411C201C1400440440 /* Mai.swift */; };
 		88DA90441C201E5000440440 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA90431C201E5000440440 /* Notification.swift */; };
 		88DA90461C2028E700440440 /* MaiException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA90451C2028E700440440 /* MaiException.swift */; };
+		E87FE33F1C3E97F500EDE7DF /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87FE33E1C3E97F500EDE7DF /* Shell.swift */; };
+		E87FE3411C3EB96A00EDE7DF /* ShellException.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87FE3401C3EB96A00EDE7DF /* ShellException.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		88DA90411C201C1400440440 /* Mai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mai.swift; sourceTree = "<group>"; };
 		88DA90431C201E5000440440 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		88DA90451C2028E700440440 /* MaiException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaiException.swift; sourceTree = "<group>"; };
+		E87FE33E1C3E97F500EDE7DF /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		E87FE3401C3EB96A00EDE7DF /* ShellException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShellException.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				88D990DF1C205F3000EC5151 /* StatusController.swift */,
 				88D990E11C205F7500EC5151 /* Countdown.swift */,
 				881946531C2169670074F4D9 /* SpeechController.swift */,
+				E87FE33E1C3E97F500EDE7DF /* Shell.swift */,
+				E87FE3401C3EB96A00EDE7DF /* ShellException.swift */,
 			);
 			path = "white-fennec";
 			sourceTree = "<group>";
@@ -214,7 +220,7 @@
 				TargetAttributes = {
 					88BB755D1C1EC8E500C132B2 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = EQYWNF4UU4;
+						DevelopmentTeam = 4E5JCURM5E;
 					};
 					88BB756E1C1EC8E600C132B2 = {
 						CreatedOnToolsVersion = 7.2;
@@ -279,11 +285,13 @@
 			files = (
 				88DA90441C201E5000440440 /* Notification.swift in Sources */,
 				88D990E01C205F3000EC5151 /* StatusController.swift in Sources */,
+				E87FE3411C3EB96A00EDE7DF /* ShellException.swift in Sources */,
 				88BB75641C1EC8E500C132B2 /* ViewController.swift in Sources */,
 				88DA90421C201C1400440440 /* Mai.swift in Sources */,
 				88D990DC1C205E9600EC5151 /* Timer.swift in Sources */,
 				88D990E21C205F7500EC5151 /* Countdown.swift in Sources */,
 				88D990DE1C205EF400EC5151 /* StatusView.swift in Sources */,
+				E87FE33F1C3E97F500EDE7DF /* Shell.swift in Sources */,
 				88BB75621C1EC8E500C132B2 /* AppDelegate.swift in Sources */,
 				88DA90461C2028E700440440 /* MaiException.swift in Sources */,
 				881946541C2169670074F4D9 /* SpeechController.swift in Sources */,
