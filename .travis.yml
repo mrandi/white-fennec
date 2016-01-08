@@ -1,9 +1,11 @@
 language: objective-c
 
-script:
-  - xcodebuild CODE_SIGNING_REQUIRED=NO
+notifications:
+  email: true
 
 osx_image: xcode7.2
 xcode_project: white-fennec.xcodeproj
 xcode_scheme: white-fennec
 xcode_sdk: macosx10.11
+
+script: xctool -project white-fennec.xcodeproj -scheme white-fennec build  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
