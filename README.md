@@ -2,7 +2,7 @@
 
 white-fennec use [mai](https://github.com/zalando-stups/mai) to show a list of available accounts for AWS.
 
-The `mai` command will run in your current login shell
+The `mai` command will run in your current login shell.
 
 <img src=images/white-fennec.png alt="Screenshot of white-fennec"/>
 
