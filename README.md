@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/zalando-stups/white-fennec.svg?branch=master)](https://travis-ci.org/zalando-stups/white-fennec)
 # white-fennec
 
 white-fennec use [mai](https://github.com/zalando-stups/mai) to show a list of available accounts for AWS.
