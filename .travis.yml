@@ -1,6 +1,16 @@
 language: objective-c
-notifications:
-  email: true
+
+before_script:
+  - pip install --user codecov
+  
 xcode_project: white-fennec.xcodeproj
 xcode_scheme: white-fennec
+
 script: xctool -project white-fennec.xcodeproj -scheme white-fennec build  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
+after_success:
+    - codecov
+
+notifications:
+    email:
+      on_failure: change
